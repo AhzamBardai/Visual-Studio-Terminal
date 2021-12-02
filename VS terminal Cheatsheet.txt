@@ -1,0 +1,32 @@
+dotnet command line to make a proj:
+
+mkdir folder
+cd folder
+dotnet new sln -n|--name haha.sln (name optional defaults to name of dir)
+dotnet new console -f|--framework net5.0 -n|--name newProj
+dotnet new classlib -f|--framework net5.0 -n|--name newLib
+
+(adds projects to sln file)
+dotnet sln SLN_FILE.sln add newProj/newProj.csproj (single first to add this as entry point)
+dotnet sln SLN_FILE.sln add **/*.csproj (adds all csproj files in current dir in the sln file)
+
+(remove projects from sln file)
+dotnet sln SLN_FILE.sln remove newProj/newProj.csproj (remove single proj)
+dotnet sln SLN_FILE.sln remove **/*.csproj (remove all projs)
+
+(add ref to a project)
+dotnet add PROJ_TO_ADD_REF.csproj reference REF_TO_ADD1.csproj (single, can chain multiple projs)
+dotnet add PROJ_TO_ADD_REF.csproj reference **/*.csproj (all ref to all projs)
+
+(build dll and exe from **inside the project dir**)
+dotnet build
+
+(run a csproj from **inside the project dir**)
+dotnet run
+
+(run dotnet dll like Brian running exe from studio devtools)
+(**inside PROJ_FOLDER/bin/debug/net5.0/** )
+(**only for console apps that have a deps.json**)
+(**only for dll files this will not run exe files**)
+
+dotnet PROJ_NAME.dll
