@@ -24,7 +24,7 @@ dotnet build
 (run a csproj from **inside the project dir**)
 dotnet run
 
-(run dotnet dll like Brian running exe from studio devtools)
+(run dotnet dll like Brian running exe from visual studio terminal)
 (**inside PROJ_FOLDER/bin/debug/net5.0/** )
 (**only for console apps that have a deps.json**)
 (**only for dll files this will not run exe files**)
