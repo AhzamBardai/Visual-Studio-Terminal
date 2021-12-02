@@ -16,3 +16,4 @@ This is a windows .net console application which allows you to open visual studi
 ## Contributions
 - Please let me of any bugs in the issues tab or additions in the Pull Request tab
 - Appreciate your time looking at my repo and hope you like it enough to leave a star
+- Orignal repo used to build this => https://github.com/djhmateer/OpenVSSolution/releases
