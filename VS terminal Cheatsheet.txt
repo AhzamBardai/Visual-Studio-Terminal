@@ -2,7 +2,7 @@ dotnet command line to make a proj:
 
 mkdir folder
 cd folder
-dotnet new sln -n|--name haha.sln (name optional defaults to name of dir)
+dotnet new sln -n|--name newSol.sln (name optional defaults to name of dir)
 dotnet new console -f|--framework net5.0 -n|--name newProj
 dotnet new classlib -f|--framework net5.0 -n|--name newLib
 
