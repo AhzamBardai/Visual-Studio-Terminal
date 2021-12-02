@@ -1,5 +1,5 @@
 # Visual-Studio-Terminal
-This is a windows .net console application which allows you to open visual studio projects from the command line. This will only work if you have 
+This is a windows .net console application which allows you to open visual studio projects from the command line. This will only work if you have .NET framework v4 installed on your windows machine.
 
 ## Instructions
 - To use this you have to build this solution in visual studio or download the `studio.exe` file in the repo.
